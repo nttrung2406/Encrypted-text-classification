@@ -26,7 +26,7 @@ After finetuning multi large language models with train dataset (i use 5 LLMs he
 
 => Then use that chunked dataset to finetune again those LLMs and infer with test dataset.
 
-*c)* Semi-supervised moethod
+*c)* Semi-supervised method
 
 First finetune the DistiBERT Masked Language model with unlabel dataset then create the pseudo labels
 
