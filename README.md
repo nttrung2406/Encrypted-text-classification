@@ -4,9 +4,9 @@ Contest and dataset can be taken from here: https://aihub.ml/competitions/759#le
 
 There are multiple solutions for this contest:
 
-**1) With unlabel dataset**:
+**1) With unlabel dataset**
 
-*a)*: **(Highest F1 score)**
+*a)* **(Highest F1 score)**
 
 Chunk unlabel dataset based on the mean length of the records of train dataset.
 
@@ -16,19 +16,19 @@ Chunk unlabel dataset based on the mean length of the records of train dataset.
 
 => Take the majority voting and assign that as pseudo labels.
 
-*b)*:
+*b)*
 
 After finetuning multi large language models with train dataset (i use 5 LLMs here: DistiBERT, RoBERTa, DeBERTa, XLNet and ELECTRA), infer those models with chunked dataset.
 
 => Then use that chunked dataset to finetune again those LLMs and infer with test dataset.
 
-*c)*: Semi-supervised moethod
+*c)* Semi-supervised moethod
 
 First finetune the DistiBERT Masked Language model with unlabel dataset then create the pseudo labels
 
 => Combine pseudo-labeled datas with training data and train with DistiBERT.
 
-**2) With similar dataset**:
+**2) With similar dataset**
 
 Use similar dataset to augment the training data by replacing the token which is near with toekns in similar
 
