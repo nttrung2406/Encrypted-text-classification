@@ -2,6 +2,10 @@
 
 Contest and dataset can be taken from here: https://aihub.ml/competitions/759#learn_the_details
 
+**Overview**:
+
+This is the text classification contest which the records are the sequences of encryped numbers. The goal is to classify them into 3 classes 0, 1 and 2.
+
 There are multiple solutions for this contest:
 
 **1) With unlabel dataset**
